@@ -31,7 +31,7 @@ sample=[ fixed_acidity,volatile_acidity, citric_acid,
          residual_sugar,chlorides,free_sulfur_dioxide,total_sulfur_dioxide, density,pH,sulphates, alcohol]
 sample_df=pd.DataFrame([sample], columns=features_num)
 
-model = pickle.load(open("finalized_model.sav","rb"))
+model = pickle.load(open("https://github.com/ngoantnut/WineQualityPred/blob/main/finalized_model.sav","rb"))
 if result:
     st.write('Chất lượng của rượu vang là:  ' , str(model.predict(sample_df)))
 if result >= 8:
