@@ -5,9 +5,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 warnings.filterwarnings("ignore")
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LogisticRegression
+
 st.image('wine.jpg')
 st.title('Dự đoán chất lượng rượu vang: ')
 col1, col2, col3 =st.columns(3)
